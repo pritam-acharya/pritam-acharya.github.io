@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <link rel="icon" href="assets/earth.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <script src="https://use.fontawesome.com/741d2f5dac.js"></script>
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+
+        Experience · Pritam Acharya
+
+    </title>
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/text hover.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/poole.css">
+    <link rel="stylesheet" href="css/syntax.css">
+    <link rel="stylesheet" href="css/hyde.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/anjana.css">
+
+    <!-- Custom JS -->
+    <script src="css/anjana.js"></script>
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/apple-touch-icon-144-precomposed.html">
+    <!-- <link rel="shortcut icon" href="/public/favicon.ico"> -->
+
+    <!-- Feed (jekyll-feed) -->
+    <link type="application/atom+xml" rel="alternate" href="feed.xml" title="Pritam Acharya">
+    <style type="text/css">
+        button.btn[data-v-5f0b9ba1] {
+            display: inline-block;
+            font-weight: 300;
+            line-height: 1.25;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            user-select: none;
+            border: 1px solid transparent;
+            cursor: pointer;
+            letter-spacing: 1px;
+            transition: all .15s ease
+        }
+
+        button.btn.btn-sm[data-v-5f0b9ba1] {
+            padding: .4rem .8rem;
+            font-size: .8rem;
+            border-radius: .2rem
+        }
+
+        button.btn.btn-primary[data-v-5f0b9ba1] {
+            color: #fff;
+            background-color: #45C8F1;
+            border-color: #45C8F1
+        }
+
+        button.btn.btn-outline-primary[data-v-5f0b9ba1] {
+            color: #45C8F1;
+            background-color: transparent;
+            border-color: #45C8F1
+        }
+
+        button.btn.btn-danger[data-v-5f0b9ba1] {
+            color: #fff;
+            background-color: #FF4949;
+            border-color: #FF4949
+        }
+
+        .text-muted[data-v-5f0b9ba1] {
+            color: #8492A6
+        }
+
+        .text-center[data-v-5f0b9ba1] {
+            text-align: center
+        }
+
+        .drop-down-enter[data-v-5f0b9ba1],
+        .drop-down-leave-to[data-v-5f0b9ba1] {
+            transform: translateX(0) translateY(-20px);
+            transition-timing-function: cubic-bezier(0.74, 0.04, 0.26, 1.05);
+            opacity: 0
+        }
+
+        .drop-down-enter-active[data-v-5f0b9ba1],
+        .drop-down-leave-active[data-v-5f0b9ba1] {
+            transition: all .15s
+        }
+
+        .move-left-enter[data-v-5f0b9ba1],
+        .move-left-leave-to[data-v-5f0b9ba1] {
+            transform: translateY(0) translateX(-80px);
+            transition-timing-function: cubic-bezier(0.74, 0.04, 0.26, 1.05);
+            opacity: 0
+        }
+
+        .move-left-enter-active[data-v-5f0b9ba1],
+        .move-left-leave-active[data-v-5f0b9ba1] {
+            transition: all .15s
+        }
+
+        .no-tr[data-v-5f0b9ba1] {
+            transition: none !important
+        }
+
+        .no-tr *[data-v-5f0b9ba1] {
+            transition: none !important
+        }
+
+        .overlay[data-v-5f0b9ba1] {
+            position: fixed;
+            background: rgba(220, 220, 220, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: all 0.2s ease;
+            opacity: 0;
+            visibility: hidden
+        }
+
+        .overlay .modal[data-v-5f0b9ba1] {
+            transition: all 0.2s ease;
+            opacity: 0;
+            transform: scale(0.6);
+            overflow: hidden
+        }
+
+        .overlay.show[data-v-5f0b9ba1] {
+            opacity: 1;
+            visibility: visible
+        }
+
+        .overlay.show .modal[data-v-5f0b9ba1] {
+            opacity: 1;
+            transform: scale(1)
+        }
+
+        .panel[data-v-5f0b9ba1] {
+            padding: 6px 10px;
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            align-items: center;
+            border-radius: 4px;
+            position: relative;
+            border: 1px solid #eaf7ff;
+            background: #f7fcff;
+            outline: none;
+            transition: all 0.07s ease-in-out
+        }
+
+        .btn[data-v-5f0b9ba1] {
+            cursor: pointer;
+            box-sizing: border-box
+        }
+
+        .light-btn[data-v-5f0b9ba1] {
+            padding: 6px 10px;
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            align-items: center;
+            border-radius: 4px;
+            position: relative;
+            border: 1px solid #eaf7ff;
+            background: #f7fcff;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.07s ease-in-out
+        }
+
+        .light-btn[data-v-5f0b9ba1]:hover {
+            background: #e0f4ff;
+            border-color: #8acfff
+        }
+
+        .shake[data-v-5f0b9ba1] {
+            animation: shake-data-v-5f0b9ba1 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+            transform: translate3d(0, 0, 0)
+        }
+
+        @keyframes shake-data-v-5f0b9ba1 {
+
+            10%,
+            90% {
+                transform: translate3d(-1px, 0, 0)
+            }
+
+            20%,
+            80% {
+                transform: translate3d(2px, 0, 0)
+            }
+
+            30%,
+            50%,
+            70% {
+                transform: translate3d(-4px, 0, 0)
+            }
+
+            40%,
+            60% {
+                transform: translate3d(4px, 0, 0)
+            }
+        }
+
+        .pulse[data-v-5f0b9ba1] {
+            animation: pulse-data-v-5f0b9ba1 2s ease infinite
+        }
+
+        @keyframes pulse-data-v-5f0b9ba1 {
+            0% {
+                opacity: .7
+            }
+
+            50% {
+                opacity: .4
+            }
+
+            100% {
+                opacity: .7
+            }
+        }
+
+        .flash-once[data-v-5f0b9ba1] {
+            animation: flash-once 3.5s ease 1
+        }
+
+        @keyframes fade-up-data-v-5f0b9ba1 {
+            0% {
+                transform: translate3d(0, 10px, 0);
+                opacity: 0
+            }
+
+            100% {
+                transform: translate3d(0, 0, 0);
+                opacity: 1
+            }
+        }
+
+        .fade-in[data-v-5f0b9ba1] {
+            animation: fade-in-data-v-5f0b9ba1 .3s ease-in-out
+        }
+
+        @keyframes fade-in-data-v-5f0b9ba1 {
+            0% {
+                opacity: 0
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        .spin[data-v-5f0b9ba1] {
+            animation-name: spin-data-v-5f0b9ba1;
+            animation-duration: 2000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear
+        }
+
+        @keyframes spin-data-v-5f0b9ba1 {
+            from {
+                transform: rotate(0deg)
+            }
+
+            to {
+                transform: rotate(360deg)
+            }
+        }
+
+        .bounceIn[data-v-5f0b9ba1] {
+            animation-name: bounceIn-data-v-5f0b9ba1;
+            transform-origin: center bottom;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-iteration-count: 1
+        }
+
+        @keyframes bounceIn-data-v-5f0b9ba1 {
+
+            0%,
+            20%,
+            40%,
+            60%,
+            80%,
+            100% {
+                -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+            }
+
+            0% {
+                opacity: 1;
+                -webkit-transform: scale3d(0.8, 0.8, 0.8);
+                transform: scale3d(0.8, 0.8, 0.8)
+            }
+
+            20% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1);
+                transform: scale3d(1.1, 1.1, 1.1)
+            }
+
+            40% {
+                -webkit-transform: scale3d(0.9, 0.9, 0.9);
+                transform: scale3d(0.9, 0.9, 0.9)
+            }
+
+            60% {
+                opacity: 1;
+                -webkit-transform: scale3d(1.03, 1.03, 1.03);
+                transform: scale3d(1.03, 1.03, 1.03)
+            }
+
+            80% {
+                -webkit-transform: scale3d(0.97, 0.97, 0.97);
+                transform: scale3d(0.97, 0.97, 0.97)
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1)
+            }
+        }
+
+        @keyframes dots-data-v-5f0b9ba1 {
+
+            0%,
+            20% {
+                color: rgba(0, 0, 0, 0);
+                text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0)
+            }
+
+            40% {
+                color: #8492A6;
+                text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0)
+            }
+
+            60% {
+                text-shadow: 0.25em 0 0 #8492A6, 0.5em 0 0 rgba(0, 0, 0, 0)
+            }
+
+            80%,
+            100% {
+                text-shadow: .25em 0 0 #8492A6, .5em 0 0 #8492A6
+            }
+        }
+
+        @keyframes recording-data-v-5f0b9ba1 {
+            0% {
+                box-shadow: 0px 0px 5px 0px rgba(173, 0, 0, 0.3)
+            }
+
+            65% {
+                box-shadow: 0px 0px 5px 5px rgba(173, 0, 0, 0.3)
+            }
+
+            90% {
+                box-shadow: 0px 0px 5px 5px rgba(173, 0, 0, 0)
+            }
+        }
+
+        body[data-v-5f0b9ba1] {
+            margin: 0;
+            font-size: 100%;
+            color: #3C4858
+        }
+
+        a[data-v-5f0b9ba1] {
+            text-decoration: none;
+            color: #45C8F1
+        }
+
+        h1[data-v-5f0b9ba1],
+        h2[data-v-5f0b9ba1],
+        h3[data-v-5f0b9ba1],
+        h4[data-v-5f0b9ba1] {
+            margin-top: 0
+        }
+
+        svg[data-v-5f0b9ba1] {
+            outline: none
+        }
+
+        .container_selected_area[data-v-5f0b9ba1] {
+            display: none;
+            visibility: hidden;
+            padding: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2147483647
+        }
+
+        .container_selected_area.active[data-v-5f0b9ba1] {
+            visibility: visible;
+            display: block
+        }
+
+        .container_selected_area .label[data-v-5f0b9ba1] {
+            font-family: "Didact Gothic Regular", sans-serif;
+            font-size: 22px;
+            text-align: center;
+            padding-top: 15px
+        }
+
+        .container_selected_area .area[data-v-5f0b9ba1] {
+            display: none;
+            position: fixed;
+            z-index: 2147483647;
+            border: 1px solid #1e83ff;
+            background: rgba(30, 131, 255, 0.1);
+            box-sizing: border-box
+        }
+
+        .container_selected_area .area.active[data-v-5f0b9ba1] {
+            display: block;
+            top: 0;
+            left: 0
+        }
+
+        .hide[data-v-5f0b9ba1] {
+            display: none
+        }
+    </style>
+</head>
+
+<body class="theme-base-0d" data-new-gr-c-s-check-loaded="14.1028.0" data-gr-ext-installed="">
+
+    <div class="sidebar">
+        <div class="container left-align">
+            <div class="sidebar-about">
+
+                <img class="img-circle" src="assets/img1.jpg" width="200" height="200">
+
+                <h1>
+                    <a href="index.html">
+                        Pritam Acharya
+                    </a>
+                </h1>
+                <p class="lead">Sophomore @ <a href="https://www.iiserpune.ac.in/" target="_blank"> IISER
+                        Pune </a> in the <a href="https://www.iiserpune.ac.in/people/faculty" target="_blank">
+                        Department of Mathematics and Earth & Climate
+                        Sciences</a>.</p>
+            </div>
+
+            <nav class="sidebar-nav">
+                <!-- <a class="sidebar-nav-item" href="/">Home</a> -->
+
+
+
+                <a class="sidebar-nav-item" href="index.html">Home</a>
+
+                <a class="sidebar-nav-item" href="education.html">Education</a>
+                <a class="sidebar-nav-item" href="assets/CV-PritamAcharya.pdf" target="_blank">Resume</a>
+                <a class="sidebar-nav-item" href="skillandexp.html">Skills &amp; Experience</a>
+                <a class="sidebar-nav-item" href="projects.html">Projects</a>
+                <!--
+                <a class="sidebar-nav-item" href="scicom/index.html">Science Communication</a>
+                <a class="sidebar-nav-item" href="gallery/index.html">Gallery</a>
+                -->
+            </nav>
+
+            <ul class="list-inline" id="sidebar-buttons">
+                <li>
+                    <a href="mailto:pritam.k5.acharya@gmail.com" class="btn-social btn-outline" title="Email Me!">
+                        <i class="fa fa-fw fa-at"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/pritam-acharya" target="_blank" class="btn-social btn-outline"
+                        title="Pritam on GitHub">
+                        <i class="fa fa-fw fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/pritam-acharya/" target="_blank" class="btn-social btn-outline"
+                        title="Pritam on LinkedIn">
+                        <i class="fa fa-fw fa-linkedin"></i>
+                    </a>
+                </li>
+                <!-- <li id="color-button"><a class="btn-social btn-outline" title="I wonder what this does..."><i
+                            class="fa fa-fw fa-question-circle"></i></a>
+                </li> -->
+            </ul>
+
+            <p id="credits">© 2021 <a href="credits.html">Credits</a></p>
+        </div>
+    </div>
+
+
+    <div class="content container">
+        <div class="page">
+            <h1 class="page-title">Skills</h1>
+            <h2 class="talk-section" id="y2016" style="color:indianred"><i class="fas fa-laptop-code"></i> Technical</h2>
+            
+            <div class="project post">
+                <h3 class="project-title post-title">
+                    Programming Languages and Packages
+            
+                </h3>
+            
+                <p>Working knowledge of C, Python (especially libraries like NumPy, matplotlib, beautifulsoup &amp; Pandas), &amp; MATLAB.</p>
+            
+            </div>
+            
+            
+            <div class="project post">
+                <h3 class="project-title post-title">
+                    Plotting Tools
+            
+                </h3>
+            
+                <p> I use plotting softwares like gnuplot and MS Excel to represent various types of data. </p>
+            
+            </div>
+            <div class="project post">
+                <h3 class="project-title post-title">
+                    Web Design
+            
+                </h3>
+            
+                <p> HTML5, CSS3, and Javascript </p>
+            
+            </div>
+            <div class="project post">
+                <h3 class="project-title post-title">Miscellaneous</h3>
+                <p>Proficient in Latex, comfortable with Ubuntu and Windows, &amp; proficient in git. </p>
+            </div>
+     <!--
+            <div class="projects">
+    
+                <h2 class="talk-section" id="y2016" style="color:indianred"><i class="fas fa-vial"></i> Lab Skills </h2>
+    
+    
+                <div class="project post">
+                    <h3 class="project-title post-title">
+                        Clean Labs
+    
+                    </h3>
+    
+                    <p>Experience includes working in class 10 vented-hood workstations for sample preparation, column
+                        chemistry (for isolation of elements for analysis), geochemical work with acids, including
+                        whole-rock dissolution and etching/staining. </p>
+    
+                </div>
+    
+    
+                <div class="project post">
+                    <h3 class="project-title post-title">
+                        Separation of Accessory Minerals
+    
+                    </h3>
+    
+                    <p>Skilled in all the processes of accessory mineral separation of Zircon, Apatite, Monazite etc. from
+                        all rock types and preparing mounts for imaging and ICP-MS analysis. </p>
+    
+                </div>
+    
+                <div class="project post">
+                    <h3 class="project-title post-title">
+                        Electron Microscopy
+    
+                    </h3>
+    
+                    <p>Experienced in imaging material samples using Scanning Electron Microscope (SEM) with Back-scattered
+                        Electron Detector (BSE) and Cathodoluminescence Detector (CL), and energy dispersive spectroscopy
+                        (EDS), including working with sample preparation techniques using both manual and automated
+                        approaches such as particle coating system. </p>
+    
+                </div>
+    
+                <div class="project post">
+                    <h3 class="project-title post-title">
+                        Thin Sections Preparation
+    
+                    </h3>
+    
+                    <p>Experienced in preparing thin sections for petrography and EPMA analysis. </p>
+    
+                </div>
+    
+    
+            </div>
+    
+    
+            <h2 class="talk-section" id="y2016" style="color:indianred"><i class="fas fa-hammer"></i> Fieldwork</h2>
+    
+            <div class="project post">
+                <h3 class="project-title post-title">
+                    Dhanjori Basin, Singhbhum Craton, Jharkhand, India
+    
+                </h3>
+                <span class="project-tagline post-date">
+                    March, 2020
+                </span>
+    
+                <p> This field trip was conducted to collect various rock samples from the Dhanjori lava succession in the
+                    Singhbhum Craton in Eastern India and making field observations related to the tectono-magmatic
+                    evolution of the craton. </p>
+    
+    
+            </div>
+    
+            <div class="project post">
+                <h3 class="project-title post-title">
+                    Shivalik Hills, Outer Himalaya, Himachal Pradesh, India
+    
+                </h3>
+                <span class="project-tagline post-date">
+                    December, 2019
+                </span>
+    
+                <p>The aim of the fieldtrip was to understand the sedimentation and tectonic processes occuring in the
+                    Himalayas presently and in the past. Analysed various tertiary deposits to understand the classificafion
+                    of the Outer Himalayas based on lithostratigraphy and paleosediments deposition at the base of
+                    Shivaliks. </p>
+    
+    
+            </div>
+    
+    
+            <div class="project post">
+                <h3 class="project-title post-title">
+                    Eastern Southern Limestone Julian Alps, NW Slovenia
+    
+                </h3>
+                <span class="project-tagline post-date">
+                    June, 2018
+                </span>
+    
+                <p>This field trip was focused on the latest Triassic to Cretaceous sedimentary evolution and paleogeography
+                    of the Adriatic continental margin that is now preserved in the Julian Alps in NW Slovenia. </p>
+    
+    
+    
+            </div>
+    
+            <div class="project post">
+                <h3 class="project-title post-title">
+                    Bükk Mountains, Inner Western Carpathians, Hungary
+    
+                </h3>
+                <span class="project-tagline post-date">
+                    June, 2018
+                </span>
+    
+                <p>Structural observations and measurements were implemented in the south-western part of the Bükk
+                    Mountains. Major sites/outcrops were investigated during which the orientation of major structural
+                    elements were considered.</p>
+    
+    
+    
+            </div>
+    
+            <div class="project post">
+                <h3 class="project-title post-title">
+                    Alaknanda-Dhauli Ganga Valleys, Uttarakhand Himalaya, India
+    
+                </h3>
+                <span class="project-tagline post-date">
+                    March, 2019
+                </span>
+    
+                <p>41 litho-tectonically critical stops were included in this field excursion. Structural and
+                    litho-stratigraphical investigations were made in the different divisions of the Himalaya, including the
+                    Proterozoic Inner Lesser Himalayan Sedimentary Sequence (iLH), its deformation through the Main Central
+                    Thrust (MCT) Zone, start of the kyanite isograd, different generations of melt accumulation within
+                    migmatites and finally the contact between the Higher Himalayan Crystallines (HHC) and the South Tibetan
+                    Detachment System (STDS). </p>
+    
+    
+    
+            </div>
+    
+            <div class="project post">
+                <h3 class="project-title post-title">
+                    South Almora Thrust (SAT) Zone, Kumaon Lesser Himalaya, India
+    
+                </h3>
+                <span class="project-tagline post-date">
+                    April, 2019
+                </span>
+    
+                <p>Traced the mylonite zone along the southern boundary of the Almora unit, i.e.
+                    SAT, in search of potential tectonic breccias and pseudotachyllites.</p>
+    
+    
+    
+            </div>
+    
+            <div class="project post">
+                <h3 class="project-title post-title">
+                    Chandipur and Dagara Beach, Balasore, Orissa, India
+    
+                </h3>
+                <span class="project-tagline post-date">
+                    December, 2018
+                </span>
+    
+                <p>This field trip was part of the Sedimentology coursework and was aimed at the study of various
+                    sedimentary facies and structures in and around the Chandipur beach. We learned how to take measurements
+                    of these structures and using them in determining the paleocurrent directions. </p>
+    
+    
+    
+            </div>
+    
+        </div>
+    
+        <div class="project post">
+            <h3 class="project-title post-title">
+                Bhagirathi Valley, Gharwal Himalaya, India
+    
+            </h3>
+            <span class="project-tagline post-date">
+                May, 2017
+            </span>
+    
+            <p>This was a sampling expedition done along 30 critical stops through the Indo-Eurasian collision zone.
+                Starting from Sainj to Gangotri we collected various samples of LHSZ quartzites and Higher Himalayan
+                Crystallines (HHC) of the Himalayan Metamorphic Belt.</p>
+    
+    
+    
+        </div>
+    
+        <div class="project post">
+            <h3 class="project-title post-title">
+                Galudih and Tetuldanga, East Singhbhum Region, Jharkhand, India
+    
+            </h3>
+            <span class="project-tagline post-date">
+                December, 2016
+            </span>
+    
+            <p>The field trip was part of the Structural Geology coursework and the major objectives were, structural
+                mapping of Galudih region, interpretation of deformation mechanism, mineralogical studies of samples
+                collected from certain zones, and understanding the deformation mechanism of Tetuldanga outcrop.</p>
+    
+        </div>
+    
+        <h2 class="talk-section" id="y2016" style="color:indianred"><i class="fas fa-laptop-code"></i> Technical</h2>
+    
+        <div class="project post">
+            <h3 class="project-title post-title">
+                Programming Languages and Packages
+    
+            </h3>
+    
+            <p>Working knowledge of C, Python, MATLAB &amp; R for geochemical modelling, statistical analysis including
+                GeoChemical Data toolkit (GCDkit) and ImageJ for image processing.</p>
+    
+        </div>
+    
+    
+        <div class="project post">
+            <h3 class="project-title post-title">
+                Plotting Tools
+    
+            </h3>
+    
+            <p> I use various plotting softwares like Isoplot, gnuplot, Surfer, Grapher, OriginPro, SigmaPlot, Isoplot and
+                MS Excel to represent various types of geochemical data. </p>
+    
+        </div>
+    
+        <div class="project post">
+            <h3 class="project-title post-title">
+                Geographic Information System
+    
+            </h3>
+    
+            <p>I have basic proficiency in ArcGis and QGIS for georeferencing and map manipulation. </p>
+    
+        </div>
+    
+        <div class="project post">
+            <h3 class="project-title post-title">
+                Graphic and Media Designing
+    
+            </h3>
+    
+            <p> Adobe Illustrator, Adobe Photoshop, CorelDraw, DaVinci Resolve, Adobe Premiere Pro, Blender, Adobe After
+                Effects, Vegas Pro, FL Studio, Adobe Audition, Audacity. </p>
+    
+        </div>
+    
+        <div class="project post">
+            <h3 class="project-title post-title">
+                Web Design
+    
+            </h3>
+    
+            <p> HTML and CSS </p>
+    
+        </div>
+    -->
+    
+    </div>
+</body>

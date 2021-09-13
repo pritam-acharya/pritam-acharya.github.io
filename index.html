@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <link rel="icon" href="assets/earth.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <script src="https://use.fontawesome.com/741d2f5dac.js"></script>
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+
+        Home · Pritam Acharya
+
+    </title>
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/text hover.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/poole.css">
+    <link rel="stylesheet" href="css/syntax.css">
+    <link rel="stylesheet" href="css/hyde.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/anjana.css">
+
+    <!-- Custom JS -->
+    <script src="css/anjana.js"></script>
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/apple-touch-icon-144-precomposed.html">
+    <!-- <link rel="shortcut icon" href="/public/favicon.ico"> -->
+
+    <!-- Feed (jekyll-feed) -->
+    <link type="application/atom+xml" rel="alternate" href="feed.xml" title="Pritam Acharya">
+    <style type="text/css">
+        button.btn[data-v-5f0b9ba1] {
+            display: inline-block;
+            font-weight: 300;
+            line-height: 1.25;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            user-select: none;
+            border: 1px solid transparent;
+            cursor: pointer;
+            letter-spacing: 1px;
+            transition: all .15s ease
+        }
+
+        button.btn.btn-sm[data-v-5f0b9ba1] {
+            padding: .4rem .8rem;
+            font-size: .8rem;
+            border-radius: .2rem
+        }
+
+        button.btn.btn-primary[data-v-5f0b9ba1] {
+            color: #fff;
+            background-color: #45C8F1;
+            border-color: #45C8F1
+        }
+
+        button.btn.btn-outline-primary[data-v-5f0b9ba1] {
+            color: #45C8F1;
+            background-color: transparent;
+            border-color: #45C8F1
+        }
+
+        button.btn.btn-danger[data-v-5f0b9ba1] {
+            color: #fff;
+            background-color: #FF4949;
+            border-color: #FF4949
+        }
+
+        .text-muted[data-v-5f0b9ba1] {
+            color: #8492A6
+        }
+
+        .text-center[data-v-5f0b9ba1] {
+            text-align: center
+        }
+
+        .drop-down-enter[data-v-5f0b9ba1],
+        .drop-down-leave-to[data-v-5f0b9ba1] {
+            transform: translateX(0) translateY(-20px);
+            transition-timing-function: cubic-bezier(0.74, 0.04, 0.26, 1.05);
+            opacity: 0
+        }
+
+        .drop-down-enter-active[data-v-5f0b9ba1],
+        .drop-down-leave-active[data-v-5f0b9ba1] {
+            transition: all .15s
+        }
+
+        .move-left-enter[data-v-5f0b9ba1],
+        .move-left-leave-to[data-v-5f0b9ba1] {
+            transform: translateY(0) translateX(-80px);
+            transition-timing-function: cubic-bezier(0.74, 0.04, 0.26, 1.05);
+            opacity: 0
+        }
+
+        .move-left-enter-active[data-v-5f0b9ba1],
+        .move-left-leave-active[data-v-5f0b9ba1] {
+            transition: all .15s
+        }
+
+        .no-tr[data-v-5f0b9ba1] {
+            transition: none !important
+        }
+
+        .no-tr *[data-v-5f0b9ba1] {
+            transition: none !important
+        }
+
+        .overlay[data-v-5f0b9ba1] {
+            position: fixed;
+            background: rgba(220, 220, 220, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: all 0.2s ease;
+            opacity: 0;
+            visibility: hidden
+        }
+
+        .overlay .modal[data-v-5f0b9ba1] {
+            transition: all 0.2s ease;
+            opacity: 0;
+            transform: scale(0.6);
+            overflow: hidden
+        }
+
+        .overlay.show[data-v-5f0b9ba1] {
+            opacity: 1;
+            visibility: visible
+        }
+
+        .overlay.show .modal[data-v-5f0b9ba1] {
+            opacity: 1;
+            transform: scale(1)
+        }
+
+        .panel[data-v-5f0b9ba1] {
+            padding: 6px 10px;
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            align-items: center;
+            border-radius: 4px;
+            position: relative;
+            border: 1px solid #eaf7ff;
+            background: #f7fcff;
+            outline: none;
+            transition: all 0.07s ease-in-out
+        }
+
+        .btn[data-v-5f0b9ba1] {
+            cursor: pointer;
+            box-sizing: border-box
+        }
+
+        .light-btn[data-v-5f0b9ba1] {
+            padding: 6px 10px;
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            align-items: center;
+            border-radius: 4px;
+            position: relative;
+            border: 1px solid #eaf7ff;
+            background: #f7fcff;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.07s ease-in-out
+        }
+
+        .light-btn[data-v-5f0b9ba1]:hover {
+            background: #e0f4ff;
+            border-color: #8acfff
+        }
+
+        .shake[data-v-5f0b9ba1] {
+            animation: shake-data-v-5f0b9ba1 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+            transform: translate3d(0, 0, 0)
+        }
+
+        @keyframes shake-data-v-5f0b9ba1 {
+
+            10%,
+            90% {
+                transform: translate3d(-1px, 0, 0)
+            }
+
+            20%,
+            80% {
+                transform: translate3d(2px, 0, 0)
+            }
+
+            30%,
+            50%,
+            70% {
+                transform: translate3d(-4px, 0, 0)
+            }
+
+            40%,
+            60% {
+                transform: translate3d(4px, 0, 0)
+            }
+        }
+
+        .pulse[data-v-5f0b9ba1] {
+            animation: pulse-data-v-5f0b9ba1 2s ease infinite
+        }
+
+        @keyframes pulse-data-v-5f0b9ba1 {
+            0% {
+                opacity: .7
+            }
+
+            50% {
+                opacity: .4
+            }
+
+            100% {
+                opacity: .7
+            }
+        }
+
+        .flash-once[data-v-5f0b9ba1] {
+            animation: flash-once 3.5s ease 1
+        }
+
+        @keyframes fade-up-data-v-5f0b9ba1 {
+            0% {
+                transform: translate3d(0, 10px, 0);
+                opacity: 0
+            }
+
+            100% {
+                transform: translate3d(0, 0, 0);
+                opacity: 1
+            }
+        }
+
+        .fade-in[data-v-5f0b9ba1] {
+            animation: fade-in-data-v-5f0b9ba1 .3s ease-in-out
+        }
+
+        @keyframes fade-in-data-v-5f0b9ba1 {
+            0% {
+                opacity: 0
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        .spin[data-v-5f0b9ba1] {
+            animation-name: spin-data-v-5f0b9ba1;
+            animation-duration: 2000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear
+        }
+
+        @keyframes spin-data-v-5f0b9ba1 {
+            from {
+                transform: rotate(0deg)
+            }
+
+            to {
+                transform: rotate(360deg)
+            }
+        }
+
+        .bounceIn[data-v-5f0b9ba1] {
+            animation-name: bounceIn-data-v-5f0b9ba1;
+            transform-origin: center bottom;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-iteration-count: 1
+        }
+
+        @keyframes bounceIn-data-v-5f0b9ba1 {
+
+            0%,
+            20%,
+            40%,
+            60%,
+            80%,
+            100% {
+                -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+            }
+
+            0% {
+                opacity: 1;
+                -webkit-transform: scale3d(0.8, 0.8, 0.8);
+                transform: scale3d(0.8, 0.8, 0.8)
+            }
+
+            20% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1);
+                transform: scale3d(1.1, 1.1, 1.1)
+            }
+
+            40% {
+                -webkit-transform: scale3d(0.9, 0.9, 0.9);
+                transform: scale3d(0.9, 0.9, 0.9)
+            }
+
+            60% {
+                opacity: 1;
+                -webkit-transform: scale3d(1.03, 1.03, 1.03);
+                transform: scale3d(1.03, 1.03, 1.03)
+            }
+
+            80% {
+                -webkit-transform: scale3d(0.97, 0.97, 0.97);
+                transform: scale3d(0.97, 0.97, 0.97)
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1)
+            }
+        }
+
+        @keyframes dots-data-v-5f0b9ba1 {
+
+            0%,
+            20% {
+                color: rgba(0, 0, 0, 0);
+                text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0)
+            }
+
+            40% {
+                color: #8492A6;
+                text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0)
+            }
+
+            60% {
+                text-shadow: 0.25em 0 0 #8492A6, 0.5em 0 0 rgba(0, 0, 0, 0)
+            }
+
+            80%,
+            100% {
+                text-shadow: .25em 0 0 #8492A6, .5em 0 0 #8492A6
+            }
+        }
+
+        @keyframes recording-data-v-5f0b9ba1 {
+            0% {
+                box-shadow: 0px 0px 5px 0px rgba(173, 0, 0, 0.3)
+            }
+
+            65% {
+                box-shadow: 0px 0px 5px 5px rgba(173, 0, 0, 0.3)
+            }
+
+            90% {
+                box-shadow: 0px 0px 5px 5px rgba(173, 0, 0, 0)
+            }
+        }
+
+        body[data-v-5f0b9ba1] {
+            margin: 0;
+            font-size: 100%;
+            color: #3C4858
+        }
+
+        a[data-v-5f0b9ba1] {
+            text-decoration: none;
+            color: #45C8F1
+        }
+
+        h1[data-v-5f0b9ba1],
+        h2[data-v-5f0b9ba1],
+        h3[data-v-5f0b9ba1],
+        h4[data-v-5f0b9ba1] {
+            margin-top: 0
+        }
+
+        svg[data-v-5f0b9ba1] {
+            outline: none
+        }
+
+        .container_selected_area[data-v-5f0b9ba1] {
+            display: none;
+            visibility: hidden;
+            padding: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2147483647
+        }
+
+        .container_selected_area.active[data-v-5f0b9ba1] {
+            visibility: visible;
+            display: block
+        }
+
+        .container_selected_area .label[data-v-5f0b9ba1] {
+            font-family: "Didact Gothic Regular", sans-serif;
+            font-size: 22px;
+            text-align: center;
+            padding-top: 15px
+        }
+
+        .container_selected_area .area[data-v-5f0b9ba1] {
+            display: none;
+            position: fixed;
+            z-index: 2147483647;
+            border: 1px solid #1e83ff;
+            background: rgba(30, 131, 255, 0.1);
+            box-sizing: border-box
+        }
+
+        .container_selected_area .area.active[data-v-5f0b9ba1] {
+            display: block;
+            top: 0;
+            left: 0
+        }
+
+        .hide[data-v-5f0b9ba1] {
+            display: none
+        }
+    </style>
+</head>
+<body class="theme-base-0d" data-new-gr-c-s-check-loaded="14.1028.0" data-gr-ext-installed="">
+
+    <div class="sidebar">
+        <div class="container left-align">
+            <div class="sidebar-about">
+                
+                <img class="img-circle" src="assets/img1.jpg" width="200" height="200">
+                
+                <h1>
+                    <a href="index.html">
+                        Pritam Acharya
+                    </a>
+                </h1>
+                <p class="lead">Sophomore @ <a href="https://www.iiserpune.ac.in/" target="_blank"> IISER
+                        Pune </a> in the <a href="https://www.iiserpune.ac.in/people/faculty" target="_blank"> Department of Mathematics and Earth & Climate
+                        Sciences</a>.</p>
+            </div>
+
+            <nav class="sidebar-nav">
+                <!-- <a class="sidebar-nav-item" href="/">Home</a> -->
+
+
+
+                <a class="sidebar-nav-item" href="index.html">Home</a>
+
+                <a class="sidebar-nav-item" href="education.html">Education</a>
+                <a class="sidebar-nav-item" href="assets/CV-PritamAcharya.pdf" target="_blank">Resume</a>
+                <a class="sidebar-nav-item" href="skillandexp.html">Skills &amp; Experience</a>
+                <a class="sidebar-nav-item" href="projects.html">Projects</a>
+                <!--
+                <a class="sidebar-nav-item" href="scicom/index.html">Science Communication</a>
+                <a class="sidebar-nav-item" href="gallery/index.html">Gallery</a>
+                -->
+            </nav>
+
+            <ul class="list-inline" id="sidebar-buttons">
+                <li>
+                    <a href="mailto:pritam.k5.acharya@gmail.com" class="btn-social btn-outline" title="Email Me!">
+                        <i class="fa fa-fw fa-at"></i>
+                    </a>
+                </li>
+                <li>
+            <a href="https://github.com/pritam-acharya" target="_blank" class="btn-social btn-outline" title="Pritam on GitHub">
+                <i class="fa fa-fw fa-github"></i> 
+            </a> 
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/pritam-acharya/" target="_blank" class="btn-social btn-outline"
+                        title="Pritam on LinkedIn">
+                        <i class="fa fa-fw fa-linkedin"></i>
+                    </a>
+                </li>
+                <!-- <li id="color-button"><a class="btn-social btn-outline" title="I wonder what this does..."><i
+                            class="fa fa-fw fa-question-circle"></i></a>
+                </li> -->
+            </ul>
+
+            <p id="credits">© 2021 <a href="credits.html">Credits</a></p>
+        </div>
+    </div>
+
+
+    <div class="content container">
+        <div class="page">
+            <div id="container">
+                <h1 class="page-title">About Me</h1>
+
+                <p>Hello! I'm Pritam Acharya, a sophomore BS-MS student in the <a class="link"
+                        href="https://www.iiserpune.ac.in/people/faculty" target="_blank"><span class="wavy"
+                            data-content="Mathematics and ECS">Mathematics and ECS</span></a> department at Indian Institute of
+                    Science Education &amp; Research <a class="link" href="http://www.iiserpune.ac.in"
+                        target="_blank"><span class="wavy" data-content="(IISER)">(IISER)</span></a> Pune, India. I am mostly interested in 
+                        mathematics and how it can be used in the field of climate science. I'm currently taking (or planning to take) majority of my courses in mathematics, and climate science
+                        along with a few courses in physics, humanities, data science and biology.
+                </p>
+
+                <p>
+                    Apart from academics, I'm also very interested in messing around on my computer. My knowledge of programming
+                    is almost entirely self-taught from experience and YouTube (sometimes from MOOCs too!). However, I do not consider
+                    myself to be an expert by any means. But, I always keep learning new stuff and trying them out and I do consider myself to
+                    be an enthusiastic and fast learner. 
+                </p>
+
+                <p>
+                    Apart from the above, I am also an avid quizzer. 
+                </p>
+                <p> My curriculum vitae (CV) can be downloaded from<span class="talk-resource"><a class="link" href="assets/CV-PritamAcharya.pdf" target="_blank"> <span class="wavy"
+                                data-content="here">here.</span></a></span><i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                </p>
+
+                <p>Please feel free to contact me (via email) if you have any interesting work for me or if you just want to have a casual, and fun
+                    quizzing session.
+                </p>
+                <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+
+                    .column {
+                        float: left;
+                        width: 33.33%;
+                        padding: 5px;
+                    }
+
+                    /* Clearfix (clear floats) */
+                    .row::after {
+                        content: "";
+                        clear: both;
+                        display: table;
+                    }
+                </style>
+            </div>
+        </div>
+    </div>
+</body>

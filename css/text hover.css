@@ -1,0 +1,69 @@
+
+#container {
+  margin: auto;
+  padding: 0 1rem;
+  max-width: 48rem;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.link {
+  position: relative;
+  -webkit-transition: -webkit-clip-path 275ms ease;
+  transition: -webkit-clip-path 275ms ease;
+  transition: clip-path 275ms ease;
+  transition: clip-path 275ms ease, -webkit-clip-path 275ms ease;
+}
+.link:hover span::before, .link:focus span::before {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.link span {
+  position: relative;
+  display: inline-block;
+  color: #ba0d0d;
+}
+.link span::before {
+  position: absolute;
+  content: attr(data-content);
+  color: #ba0d0d;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #ba0d0d;
+          text-decoration-color: #ba0d0d;
+  -webkit-clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+          clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+  -webkit-transition: -webkit-clip-path 275ms ease;
+  transition: -webkit-clip-path 275ms ease;
+  transition: clip-path 275ms ease;
+  transition: clip-path 275ms ease, -webkit-clip-path 275ms ease;
+}
+
+span.dotted::before {
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+}
+
+span.dashed::before {
+  -webkit-text-decoration-style: dashed;
+          text-decoration-style: dashed;
+}
+
+span.double::before {
+  -webkit-text-decoration-style: double;
+          text-decoration-style: double;
+}
+
+span.wavy::before {
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+}
+
+span.line-through::before {
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}

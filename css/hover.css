@@ -1,0 +1,51 @@
+/*.hover_img a { position:relative; }
+.hover_img a span { position:absolute; display:none; z-index:99; }
+.hover_img a:hover span { display:block; height: 200px; width: 200px; overflow: visible; }
+*/
+<style type="text/css">
+
+.gallerycontainer{
+position: relative; 
+
+}
+
+.thumbnail img{
+border: 1px solid white;
+margin: 0 5px 5px 0;
+}
+
+.thumbnail:hover{
+background-color: transparent;
+}
+
+.thumbnail:hover img{
+border: 1px solid blue;
+}
+
+.thumbnail span{ /*CSS for enlarged image*/
+position: absolute;
+background-color: white;
+padding: 5px;
+left: -1000px;
+border: 1px dashed gray;
+visibility: hidden;
+color: black;
+text-decoration: none;
+}
+
+.thumbnail span img{ /*CSS for enlarged image*/
+border-width: 0;
+padding: 2px;
+}
+
+.thumbnail:hover span{ /*CSS for enlarged image*/
+visibility: visible;
+top: 1;
+left: 600px; /*position where enlarged image should offset horizontally */
+z-index: 99;
+display: block;
+overflow: hidden;
+text-overflow: ellipsis;                           
+width: 300px;                                                      
+}
+</style>
