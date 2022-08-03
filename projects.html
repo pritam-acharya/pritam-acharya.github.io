@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <script src="https://use.fontawesome.com/741d2f5dac.js"></script>
-
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <!-- Enable responsiveness on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
@@ -455,9 +456,9 @@
                         Pritam Acharya
                     </a>
                 </h1>
-                <p class="lead">Sophomore @ <a href="https://www.iiserpune.ac.in/" target="_blank"> IISER
+                <p class="lead">3rd Year UG @ <a href="https://www.iiserpune.ac.in/" target="_blank"> IISER
                         Pune </a> in the <a href="https://www.iiserpune.ac.in/people/faculty" target="_blank">
-                        Department of Mathematics and Physics.</a></p>
+                        Department of Mathematics.</a></p>
             </div>
 
             <nav class="sidebar-nav">
@@ -468,7 +469,7 @@
                 <a class="sidebar-nav-item" href="index.html">Home</a>
 
                 <a class="sidebar-nav-item" href="education.html">Education</a>
-                <a class="sidebar-nav-item" href="assets/CV-PritamAcharya.pdf" target="_blank">Resume</a>
+                <a class="sidebar-nav-item" href="assets/CV-PritamAcharya.pdf" target="_blank">CV</a>
                 <a class="sidebar-nav-item" href="skillandexp.html">Skills &amp; Experience</a>
                 <a class="sidebar-nav-item" href="projects.html">Projects</a>
                 <!--
@@ -509,30 +510,44 @@
         <div class="page">
             <h1 class="page-title">Projects</h1>
             <div>
-                <h2 class="talk-section" id="y2016">Work in progress.</h2>
-            <!--        
-                <h2 class="talk-section" id="y2016">Crustal Evolution Group - IISER Kolkata</h2>
+                <h2 class="talk-section" id="y2016">Some Results on Random Walks - IISER Pune</h2>
     
                 <div class="talk">
-                    <h4 class="post-title"> Tectonics and Magmatism of the Palaeoproterozoic Dhanjori Formation, Singhbhum
-                        Crustal Province, India.</h4>
-                    <p>Research has shown that the Earth's mantle today is heterogenous in both microsopic scale and mantle
-                        scale with respect to REE, trace element composition and Rb-Sr, Sm-Nd isotopes and Pb-Pb isotopes.
-                        Using both depleted and enriched isotopic signatures of various basic and ultrabasic rocks from
-                        various parts of the world, it has been shown that such heterogeneity existed in the Precambrian as
-                        well. We aim to do U/Pb, Rb-Sr, Sm-Nd systematics, complete trace and REE studies of selected
-                        samples of basic volcanics from <a class="thumbnail">Dhanjori volcanic belt<span><img
-                                    src="../img/05.jpg">Dhanjori formation, Singhbhum Craton, India. </span></a> to
-                        understand the Precambrian evolution of mantle in the Singhbhum Craton of India and provide an
-                        absolute age for the Dhanjori volcanics. This project is ongoing and is part of my MS Thesis. </p>
+                    <h4 class="post-title"> Simple Random Walks and their Properties. Multidimensional Random Walks, and their Behaviour.
+                    </h4>
+                    <p>Random walks are seemingly simple mathematical problems with far reaching consequences.
+                    In this report I will discuss simple random walks and few non-intuitive results which we can
+                    derive upon their treatment using combinatorial techniques. We will mostly stick to classical 
+                    combinatorics and some preliminary analysis techniques to examine certain situations.
+                    Towards the end of our treatment of simple random walks we will revisit the gambler's ruin
+                    problem. </p>
+                    <p>
+                    In the second part of the project I studied multi dimensional Random Walks.
+                    Define a lattice as a collection of all the points whose coordinates are integers in \(d\)-dimensional Euclidean space.
+                    Let a point \(S_d(n)\) move randomly on this lattice, \(d\) denotes the dimension, and \(n\) denotes the epoch. The
+                    rules governing it's motion are that it starts at the origin at time \(0\). At time \(t-1\) if it's at \(S\), then at \(t\) it
+                    will be at one of the \(2d\) possible lattice points, with a probability of \(\frac{1}{2d}\). Now, we've two cases. If,
+                    \(d\leqslant2\), the walk will return to \(0\) with a probability of \(1\), and it'll happen infinitely often.
+                    If, \(d>2\) then the walk will wander off to infinity with probability \(1\). The problems we'll be focusing on in this
+                    part are (i) the number of different points through which the walk passes, and (ii) the rate at which a point performing
+                    a random walk in \(d\)-space \((d\geqslant3)\) escapes to infinity.
+                    <!-- <a class="thumbnail">Dhanjori volcanic belt<span><img
+                                    src="../img/05.jpg" Dhanjori formation, Singhbhum Craton, India. </span></a> --></p>
+                    <p>
+                        The project report can be viewed or downloaded <a class="link" href="https://drive.google.com/file/d/18qrsiqrJR0WymrcT-L1QylUye_-50Nqf/view?usp=sharing"
+                         target="_blank"><span class="wavy"
+                                data-content="here">here.</span></a>
+                    </p>
+                        
     
                     <i class="fa fa-comments-o" aria-hidden="true"></i>
     
     
-                    Prof Sukanta Dey (IISER Kolkata)
+                    Prof <a class="link" href="https://sites.google.com/view/anupbiswas/home" target="_blank"><span class="wavy"
+                            data-content="Anup Biswas">Anup Biswas</span></a> (Dept. of Mathematics, IISER Pune)
     
                     <br>
-                    <i class="fa fa-calendar" aria-hidden="true"></i> Dec 2019 - Present
+                    <i class="fa fa-calendar" aria-hidden="true"></i> May 2022 - Jul. 2022
                     <br>
     
     
@@ -540,7 +555,7 @@
                 </div>
     
     
-    
+            <!--
                 <h2 class="talk-section" id="y2015"> CSIR - Central Building Research Institute, Roorkee </h2>
     
                 <div class="talk">
